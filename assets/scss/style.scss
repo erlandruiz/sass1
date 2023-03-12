@@ -1,0 +1,61 @@
+$primary: rgb(220, 188, 44);
+$secondary: rgb(0, 255, 13) ;
+$dark: black;
+$dark_opacity: rgba($dark,1);
+$font-size: 1.75rem;
+$brand:'dsc';
+
+.#{$brand}-title-primary{
+    font-size: $font-size;
+    color: $primary;
+
+}
+
+.#{$brand}-title-secondary{
+    font-size: $font-size;
+    color: $secondary;
+
+}
+.#{$brand}-title-dark{
+    color: $dark_opacity;
+    //Nesting
+    font: {
+        size:$font-size;
+        weight:20px;
+        family: Arial, "Herlvetica Neue", Helvetica, sans-serif;
+    }
+}
+
+.#{$brand}-card{
+    width: 250px;
+    padding: 0;
+    border:{
+        radius:5px;
+        width: 1px;
+        style: solid;
+        color: $secondary;
+    }
+    img{
+        width: 100%;
+        height: 150px;
+        display: block;
+    }
+    &__body{
+        height: 50px;
+        text-align: center;
+        background: $primary;
+        line-height: 50px;
+    }
+    h1{
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
+        border: {
+            style:solid;
+            color: $secondary;
+            width: 1px
+        };
+        text-align: center;
+      
+    }
+}

@@ -4,7 +4,7 @@
   "description": "curso de sass",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./utils/scss/style.scss ./utils/css/style.css"
+    "sass": "sass --watch ./assets/scss/style.scss ./assets/css/style.css"
   },
   "author": "Erland Ruiz",
   "license": "MIT"
